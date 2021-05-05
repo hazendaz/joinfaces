@@ -1,5 +1,7 @@
 description = 'JoinFaces Tomcat-Mojarra Test Project'
 
 dependencies {
-    implementation project(':joinfaces-starters:jsf-spring-boot-starter')
+    implementation(project(':joinfaces-starters:jsf-spring-boot-starter')) {
+        exclude module: "richfaces-spring-boot-starter"
+    }
 }
